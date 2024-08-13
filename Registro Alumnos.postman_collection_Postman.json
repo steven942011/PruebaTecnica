@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "f0331d4b-005e-4b15-8b4a-2e762b5eaab6",
+		"name": "Registro Alumnos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29055966"
+	},
+	"item": [
+		{
+			"name": "RegistrarAlumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan Suarez\",\r\n    \"fechaNacimiento\": \"2003-01-15\",\r\n    \"nomPadre\": \"Pedro Suarez\",\r\n    \"nomMadre\": \"Maria De Suarez\",\r\n    \"email\": \"juan@gmail.com\",\r\n    \"password\": \"123\",\r\n    \"grado\": \"Tercero Basico\",\r\n    \"seccion\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4700/crear-alumno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4700",
+					"path": [
+						"crear-alumno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginAlumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan Suarez\",\r\n    \"fechaNacimiento\": \"2003-01-15\",\r\n    \"nomPadre\": \"Pedro Suarez\",\r\n    \"nomMadre\": \"Maria De Suarez\",\r\n    \"email\": \"juan@gmail.com\",\r\n    \"password\": \"123\",\r\n    \"grado\": \"Tercero Basico\",\r\n    \"seccion\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4700/crear-alumno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4700",
+					"path": [
+						"crear-alumno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPrueba",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetAlumnoPorGrado",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetAlumnoPorId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
